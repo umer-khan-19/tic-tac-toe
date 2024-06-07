@@ -90,30 +90,30 @@ window.addEventListener('DOMContentLoaded', () => {
         playerDisplay.classList.add(`player${currentPlayer}`);
     }
 
-    // const userAction = (tile, index) => {
-    //     if(isValidAction(tile) && isGameActive) {
-    //         tile.innerText = currentPlayer;
-    //         tile.classList.add(`player${currentPlayer}`);
-    //         updateBoard(index);
-    //         handleResultValidation();
-    //         changePlayer();
-    //     }
-    // }
-
-    // chatgpt code
-
     const userAction = (tile, index) => {
-        if (isValidAction(tile) && isGameActive) {
-            // Randomly choose 'X' or 'O'
-            const randomMove = Math.random() < 0.5 ? 'X' : 'O';
-    
-            tile.innerText = randomMove;
-            tile.classList.add(`player${randomMove}`);
+        if(isValidAction(tile) && isGameActive) {
+            tile.innerText = currentPlayer;
+            tile.classList.add(`player${currentPlayer}`);
             updateBoard(index);
             handleResultValidation();
             changePlayer();
         }
     }
+
+    // chatgpt code
+
+    // const userAction = (tile, index) => {
+    //     if (isValidAction(tile) && isGameActive) {
+    //         // Randomly choose 'X' or 'O'
+    //         const randomMove = Math.random() < 0.5 ? 'X' : 'O';
+    
+    //         tile.innerText = randomMove;
+    //         tile.classList.add(`player${randomMove}`);
+    //         updateBoard(index);
+    //         handleResultValidation();
+    //         changePlayer();
+    //     }
+    // }
     
     
     const resetBoard = () => {
