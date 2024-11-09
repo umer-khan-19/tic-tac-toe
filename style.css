@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  background-color: #548687;
+  background-color: #000000;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
@@ -38,7 +38,7 @@ body {
 
 #msg {
   font-size: 1.5rem;
-  color: #ffffc7;
+  color: yellowgreen;
 }
 
 /* Main Content */
@@ -53,8 +53,9 @@ main {
 h1 {
   margin-bottom: 2rem;
   font-size: 3rem;
-  color: #ffffc7;
+  color: yellowgreen;
 }
+
 
 /* Game Container */
 .container {
@@ -72,17 +73,18 @@ h1 {
 }
 
 .box {
-  background-color: #ffffc7;
-  color: #b0413e;
+  /* background-color: #ffffc7; */
+  background: none;
+  color: yellow;
   font-size: 2.5rem;
-  border: none;
+  border: 3px solid yellow;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .box:hover:not(:disabled) {
-  background-color: #ffeaa7;
+  /* background-color: #ffeaa7; */
   transform: scale(1.05);
 }
 
@@ -95,8 +97,8 @@ h1 {
 #new-btn {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #191913;
-  color: #fff;
+  background-color: green;
+  color: yellow;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -105,13 +107,14 @@ h1 {
 
 #reset-btn:hover,
 #new-btn:hover {
-  background-color: #333;
+  background-color: yellow;
+  color: black;
 }
 
 /* Winner Highlight */
 .winner {
   background-color: #b0413e !important;
-  color: #fff;
+  color: yellowgreen;
   transform: scale(1.1);
 }
 
